@@ -1,0 +1,55 @@
+.contactPlaceholder {
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  &Title {
+    font-size: 22px;
+  }
+  &Btn {
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+}
+.feedbackTab {
+  transition: transform 0.4s;
+}
+.contactTab {
+  transition: transform 0.4s;
+}
+
+.toFeedBackTab {
+  & .feedbackTab {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+  }
+  & .contactTab {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transform: translateX(-400px);
+  }
+}
+
+.toContactTab {
+  & .feedbackTab {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    transform: translateX(400px);
+  }
+  & .contactTab {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

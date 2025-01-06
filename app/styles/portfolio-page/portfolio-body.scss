@@ -1,0 +1,72 @@
+.portfolio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  max-height: 74%;
+
+  display: flex;
+  align-items: start;
+  &Hidden {
+    transform: translate(40%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    transition: transform 0.6s, opacity 0.4s, width 0.7s;
+  }
+  &Active {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition-property: transform;
+    transition-duration: 0.6s;
+    visibility: visible;
+  }
+}
+
+.portfolioBody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2.75rem;
+  &List {
+    padding-left: 15px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: inherit;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #87878760;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #d4d4d4; /* Градиент для скроллбара */
+      border-radius: 6px; /* Скругление краев */
+    }
+  }
+  &Info {
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .portfolio {
+    margin-top: 58px;
+    max-height: 100%;
+  }
+  .portfolioBody {
+    gap: 0;
+    &List {
+      padding-left: 8px;
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}

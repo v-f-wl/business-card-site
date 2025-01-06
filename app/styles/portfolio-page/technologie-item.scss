@@ -1,0 +1,23 @@
+.technologie-item {
+  padding: 0.125rem 1.125rem;
+  display: inline-flex;
+  border-radius: 50px;
+}
+
+.item- {
+  &blue {
+    background: rgba(#2babe6, 0.3);
+    border: 2px solid #2babe6;
+    color: #2babe6;
+  }
+  &red {
+    background: rgba(#ff6969, 0.3);
+    border: 2px solid #ff6969;
+    color: #ff6969;
+  }
+  &yellow {
+    background: rgba(#fdee65, 0.3);
+    border: 2px solid #fdee65;
+    color: #fdee65;
+  }
+}

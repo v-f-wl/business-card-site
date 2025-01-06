@@ -1,0 +1,123 @@
+@import "../styles/variables.scss";
+.cvModal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #00000076;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  &Active {
+    opacity: 1;
+    visibility: visible;
+    & .cvModalBody {
+      transform: scale(1);
+    }
+  }
+  &Body {
+    position: relative;
+
+    width: 40vw;
+    height: 50vh;
+
+    background: #2d2d2d;
+    border-radius: 24px;
+
+    transform: scale(0.7);
+    transition: transform 0.3s;
+    &Close {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.cvWrapper {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  &Title {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  &Language {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    &Item {
+      padding: 1.5rem;
+      aspect-ratio: 3/1;
+      border: 2px solid var(--contrastBgColor);
+      border-radius: $borderRadius;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-direction: column;
+      cursor: pointer;
+      & img {
+        width: 56px;
+        height: 56px;
+      }
+      & span {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+  &Download {
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border: 2px solid var(--contrastBgColor);
+    border-radius: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    &:hover {
+      border-color: var(--textColor);
+    }
+  }
+}
+
+.languageItem {
+  padding: 1.5rem;
+  aspect-ratio: 3/1;
+  border: 2px solid var(--contrastBgColor);
+  border-radius: $borderRadius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-direction: column;
+  cursor: pointer;
+  & img {
+    width: 56px;
+    height: 56px;
+  }
+  & span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondaryTextColor);
+  }
+
+  &Active {
+    border-color: var(--textColor);
+    & span {
+      color: var(--textColor);
+    }
+  }
+}

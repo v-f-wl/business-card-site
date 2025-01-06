@@ -1,0 +1,134 @@
+@import "../variables.scss";
+
+.personalCard {
+  position: absolute;
+  left: -1000px;
+
+  width: 21.875rem;
+  height: 100%;
+
+  padding: 2.375rem;
+  border: 2px solid var(--borderColor);
+  border-radius: $borderRadius;
+  background: var(--bgColor);
+
+  transition: left 0.6s;
+  &Hide {
+    left: -1000px;
+  }
+  &Active {
+    left: 0px;
+  }
+
+  &Name {
+    font-size: 2.625rem;
+    font-weight: 500;
+    max-width: min-content;
+  }
+  &Image {
+    margin-top: 1.625rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: $borderRadius;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &Attributes {
+    margin: 3rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &Desc {
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .personalCard {
+    position: static;
+
+    margin: auto auto;
+    width: 100%;
+    height: auto;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+    &Hide {
+      display: none;
+    }
+    &Active {
+      display: grid;
+    }
+    &Name {
+      max-width: max-content;
+      align-self: flex-end;
+    }
+    &Image {
+      grid-column: 1/2;
+      grid-row: 1/-1;
+    }
+    &Attributes {
+      align-self: flex-start;
+      margin: 0;
+    }
+    &Desc {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .personalCard {
+    padding: 0.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    max-height: 90dvh;
+    overflow-y: scroll;
+    &Image {
+      max-width: 300px;
+      max-height: 300px;
+      justify-self: center;
+    }
+    &Name {
+      max-width: 100%;
+      text-align: center;
+      font-size: 2.25rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .personalCard {
+    &Image {
+      max-width: 200px;
+      max-height: 200px;
+    }
+  }
+}
+
+@media (max-width: 378px) {
+  .personalCard {
+    padding: 0.25rem;
+    &Image {
+      max-width: 200px;
+      max-height: 200px;
+      justify-self: center;
+    }
+    &Name {
+      max-width: 100%;
+      text-align: center;
+      font-size: 2.25rem;
+    }
+  }
+}

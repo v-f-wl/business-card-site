@@ -1,0 +1,39 @@
+$blackColor: #09090b;
+$lightColor: #fff;
+$grayColor: #adb5bd;
+$lightBorderColor: #ebebeba3;
+$darkBorderColor: #27272a;
+$contrastLightBorderColor: #ffffff4b;
+$contrastDarkBorderColor: #6060604b;
+$lightBorderColor: #3b3b3b89;
+$borderRadius: 24px;
+
+// Цвета для светлой темы
+$light-theme-colors: (
+  textColor: $blackColor,
+  secondaryTextColor: $grayColor,
+  bgColor: $lightColor,
+  contrastBgColor: $contrastDarkBorderColor,
+  borderColor: $lightBorderColor,
+);
+
+// Цвета для темной темы
+$dark-theme-colors: (
+  textColor: $lightColor,
+  secondaryTextColor: $grayColor,
+  bgColor: $blackColor,
+  contrastBgColor: $contrastLightBorderColor,
+  borderColor: $darkBorderColor,
+);
+
+:root {
+  @each $key, $value in $light-theme-colors {
+    --#{$key}: #{$value};
+  }
+}
+
+[data-theme="dark"] {
+  @each $key, $value in $dark-theme-colors {
+    --#{$key}: #{$value};
+  }
+}

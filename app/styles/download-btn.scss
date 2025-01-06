@@ -1,0 +1,20 @@
+@import "../styles/variables";
+
+.downloadBtn {
+  position: absolute;
+  z-index: 10;
+  bottom: 3.375rem;
+  right: 3.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.5rem 1.25rem;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: $borderRadius;
+  border: 2px solid transparent;
+  &:hover {
+    border: 2px solid #fff;
+  }
+}

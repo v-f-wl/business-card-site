@@ -1,0 +1,258 @@
+@import "../variables.scss";
+.portfolioBady {
+  position: relative;
+  border: 1px solid #fff;
+  height: 100%;
+
+  padding: 2.25rem;
+
+  background: var(--bgColor);
+  border: 2px solid var(--borderColor);
+  border-radius: $borderRadius;
+  overflow: hidden;
+  overflow-y: scroll;
+  &Hidden {
+    width: 0px;
+    padding: 0;
+    overflow: hidden;
+    transition: width 0.5s;
+    border: none;
+  }
+  &Active {
+    width: 44.375rem;
+    transition: width 0.5s;
+  }
+  &CloseBtn {
+    display: none;
+  }
+  &Title {
+    font-size: 2.25rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  &Details {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  &CompanyName {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  &Date {
+    font-size: 0.875rem;
+    font-weight: 300;
+  }
+  &Subtitle {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  &Descriptions {
+    padding-left: 0.875rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    opacity: 0;
+    transform: translateX(100px);
+    cursor: pointer;
+    & .selected {
+      transition: 0.3s;
+    }
+    &:hover .selected {
+      color: red;
+    }
+  }
+  &Technologies {
+    padding-left: 0.875rem;
+    max-width: 70%;
+
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 1.125rem;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  &Links {
+    padding-left: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+  }
+}
+
+.portfolioBadyActive {
+  & .portfolioBadyTitle {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.2s, transform 0.4s;
+    transition-delay: 0.5s;
+  }
+  & .portfolioBadyDetails {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.2s, transform 0.8s;
+    transition-delay: 0.5s;
+  }
+  & .portfolioBadyDescriptions {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.2s, transform 0.8s;
+    transition-delay: 0.5s;
+  }
+  & .portfolioBadySubtitle {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.2s, transform 0.4s;
+    transition-delay: 0.5s;
+  }
+  & .portfolioBadyTechnologies {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 0.2s, transform 0.8s;
+    transition-delay: 0.5s;
+  }
+}
+
+.pColsoe {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .portfolioBady {
+    border: 1px solid #fff;
+    height: max-content;
+    border-radius: 12px;
+    height: min-content;
+    padding: 2.25rem;
+    &CloseBtn {
+      display: block;
+      position: absolute;
+      z-index: 30;
+      top: 1rem;
+      right: 1rem;
+    }
+    &Hidden {
+      width: 0px;
+      padding: 0;
+      overflow: hidden;
+      transition: width 0.5s;
+      border: none;
+    }
+    &Active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 90dvh;
+    }
+  }
+  .portfolioBodyListSelectedPortfolio {
+    display: none;
+  }
+  .portfolioBadyActive {
+    & .portfolioBadyTitle {
+      transition: opacity 0.2s, transform 0.3s;
+      transition-delay: 0.2s;
+    }
+    & .portfolioBadyDetails {
+      transition: opacity 0.2s, transform 0.5s;
+      transition-delay: 0.2s;
+    }
+    & .portfolioBadyDescriptions {
+      transition: opacity 0.2s, transform 0.5s;
+      transition-delay: 0.2s;
+    }
+    & .portfolioBadySubtitle {
+      transition: opacity 0.2s, transform 0.3s;
+      transition-delay: 0.2s;
+    }
+    & .portfolioBadyTechnologies {
+      transition: opacity 0.2s, transform 0.5s;
+      transition-delay: 0.2s;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .portfolioBady {
+    padding: 1rem;
+    &Hidden {
+      width: 0px;
+      padding: 0;
+      overflow: hidden;
+      transition: width 0.5s;
+      border: none;
+    }
+    &Active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: min-content;
+      transition: width 0s;
+    }
+    &Title {
+      font-size: 1.5rem;
+    }
+    &Details {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    &CompanyName {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    &Date {
+      font-size: 0.875rem;
+      font-weight: 300;
+    }
+    &Subtitle {
+      margin: 0.5rem 0;
+      font-size: 1.25rem;
+    }
+    &Descriptions {
+      padding-left: 0.875rem;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5rem;
+      opacity: 0;
+      transform: translateX(100px);
+      cursor: pointer;
+      & .selected {
+        transition: 0.3s;
+      }
+      &:hover .selected {
+        color: red;
+      }
+    }
+    &Technologies {
+      padding-left: 0.875rem;
+      max-width: 70%;
+
+      display: flex;
+      align-self: center;
+      flex-wrap: wrap;
+      gap: 1.125rem;
+      opacity: 0;
+      transform: translateX(100px);
+    }
+  }
+}

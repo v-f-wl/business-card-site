@@ -1,0 +1,43 @@
+{
+  "en": {
+    "myName":"Kim Valentin",
+    "navHome":"Home",
+    "navSkills":"Skills",
+    "navPortfolio":"Projects",
+    "navContacts":"Contacts",
+    "theme":"Theme",
+    "language": "Language",
+    "downloadCV":"View Resume",
+    "im":"Hello! I'm Valentin",
+    "specializing":"Specializing in Modern, Interactive Web Design",
+    "specialization":"Specialization",
+    "specializationInfo":"Frontend Developer",
+    "basedIn":"Based in",
+    "basedInInfo":"Tbilisi, Georgia",
+    "selectLanguageLabel":"Select Resume Language",
+    "downloadLabel":"Open",
+    "othersLabel":"Others",
+    "":""
+    
+  },
+  "ru": {
+    "myName":"Ким Валентин",
+    "navHome":"Главная",
+    "navSkills":"Навыки",
+    "navPortfolio":"Мои Проекты",
+    "navContacts":"Контакты",
+    "theme":"Тема",
+    "language": "Язык",
+    "downloadCV":"Просмотреть резюме",
+    "im":"Здравствуй! Я Валентин",
+    "specializing":"Реализую Современный И Интерактивный Веб-Дизайне",
+    "specialization":"Специализация",
+    "specializationInfo":"Frontend Разработчик",
+    "basedIn":"Живу в",
+    "basedInInfo":"Тбилиси, Грузия",
+    "selectLanguageLabel":"Язык Резюме",
+    "downloadLabel":"Открыть",
+    "othersLabel":"Также",
+    "":""
+  }
+}

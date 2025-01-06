@@ -1,0 +1,27 @@
+.preferencesContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.preferencesItem {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+
+  font-size: 0.9375rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .preferencesContainer {
+    margin-top: 1.25rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
