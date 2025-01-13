@@ -76,6 +76,9 @@
       font-size: 1.5rem;
       font-weight: 300;
     }
+    &::before {
+      display: none;
+    }
   }
   .contactsLinks {
     &Title {

@@ -2,8 +2,8 @@ const contactsLink = [
   {
     iconUrl: './images/icons/mail.svg',
     label: 'Mail',
-    link: 'https://dsf.com',
-    type: '',
+    link: 'v.f.wl.kim@gmail.com',
+    type: 'mail',
     id: '111'
   },
   {
@@ -30,8 +30,8 @@ const contactsLink = [
   {
     iconUrl: './images/icons/whatsapp.svg',
     label: "What's app",
-    link: 'https://dsf.com',
-    type: '115',
+    link: 'https://api.whatsapp.com/send?phone=591096581',
+    type: '',
     id: '115',
   },
   {

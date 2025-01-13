@@ -2,7 +2,6 @@
 
 .personalCard {
   position: absolute;
-  left: -1000px;
 
   width: 21.875rem;
   height: 100%;
@@ -14,10 +13,14 @@
 
   transition: left 0.6s;
   &Hide {
-    left: -1000px;
+    left: -300px;
+    opacity: 0;
+    visibility: hidden;
   }
   &Active {
     left: 0px;
+    opacity: 1;
+    visibility: visible;
   }
 
   &Name {

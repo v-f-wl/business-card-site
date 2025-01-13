@@ -28,7 +28,7 @@ const PreferencesControl = () => {
   }
   return ( 
     <div className="preferencesContainer">
-      <div 
+      {/* <div 
         onClick={handleChangeTheme}
         className="preferencesItem"
       >
@@ -36,7 +36,7 @@ const PreferencesControl = () => {
         <div className="">
           {translations.theme}
         </div>
-      </div>
+      </div> */}
       <div 
         onClick={handleChangeLanguage}
         className="preferencesItem"

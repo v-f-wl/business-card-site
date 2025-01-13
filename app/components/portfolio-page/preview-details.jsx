@@ -50,7 +50,8 @@ const PreviewDetails = () => {
         </div>
 
         <h3 className="portfolioBadySubtitle">About the project:</h3>
-        <p className="portfolioBadyDescriptions">{currentData.shortDescription.en}</p>
+        <p dangerouslySetInnerHTML={{ __html: currentData.aboutProject.en }} className="portfolioBadyDescriptions"/>
+        {/* <p className="portfolioBadyDescriptions">{currentData.aboutProject.en}</p> */}
         <h3 className="portfolioBadySubtitle">Technologies:</h3>
         <div className="portfolioBadyTechnologies">
           {currentData.technologies.map((item, index) => (

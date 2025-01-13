@@ -18,8 +18,6 @@
     filter: blur(90px);
     z-index: -1;
   }
-  // &Second {
-  // }
   &Home {
     top: 0px;
     left: 0px;
@@ -56,5 +54,10 @@
         rgba(255, 115, 0, 0.5)
       );
     }
+  }
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  .gradientOne {
+    transition: top 0s, left 0s, opacity 0s;
   }
 }

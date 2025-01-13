@@ -9,7 +9,7 @@
   display: flex;
   align-items: start;
   &Hidden {
-    transform: translate(40%, -50%);
+    transform: translate(20%, -50%);
     opacity: 0;
     visibility: hidden;
     width: 0px;
@@ -58,6 +58,9 @@
   .portfolio {
     margin-top: 58px;
     max-height: 100%;
+    &Hidden {
+      transition: all 0s;
+    }
   }
   .portfolioBody {
     gap: 0;

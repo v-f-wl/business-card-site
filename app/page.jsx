@@ -24,7 +24,7 @@ export default function Home() {
 
   return (
     <div className="wrapper">
-      <GradientOne/>
+      {/* <GradientOne/> */}
       {isDecktop && (<DownloadCV/>)}
       <CvModal/>
       <div className="container">

@@ -5,8 +5,10 @@ import { useSelector } from 'react-redux';
 
 
 const LinkItem = ({iconUrl, label, link, type}) => {
+  const href = type === 'mail' ? `mailto:${link}` : link;
+
   return (
-    <a href={link} className="linkItem">
+    <a href={href} className="linkItem">
       <div className="linkItemImg">
         <img src={iconUrl} alt="" />
       </div>
@@ -23,7 +25,13 @@ const ContactsLinks = () => {
 
       <div className="contactsLinksWrapper">
         {contactsLink.map((item) => (
-          <LinkItem key={item.id} label={item.label} iconUrl={item.iconUrl} link={item.link}/>
+          <LinkItem 
+            key={item.id} 
+            label={item.label} 
+            iconUrl={item.iconUrl} 
+            link={item.link}
+            type={item.type}
+          />
         ))}
       </div>
 
