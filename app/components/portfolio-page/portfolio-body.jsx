@@ -10,6 +10,7 @@ import PreviewDetails from './preview-details';
 const PortfolioBody = () => {
   const currentTab = useSelector(store => store.sectionsSwitch.activePage)
   const selectedPortfolioTab = useSelector(store => store.portfolioTabs.activeTabs) // id of portfolio
+  const locale = useSelector(store => store.language.language)
   const scrollElement = useRef(null)
 
   useEffect(() => {
@@ -32,9 +33,9 @@ const PortfolioBody = () => {
             <PreviewCard 
               key={item.id}
               id={item.id}
-              title={item.title.en}
-              date={item.interval.en}
-              description={item.shortDescription.en}
+              title={item.title[locale]}
+              date={item.interval[locale]}
+              description={item.shortDescription[locale]}
               isPet={item.isPetProject}
             />
           ))}

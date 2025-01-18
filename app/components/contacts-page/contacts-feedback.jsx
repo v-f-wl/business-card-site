@@ -50,9 +50,7 @@ const ContactsFeedback = () => {
     <div className="feedback">
       <h3 className="contactsLinksTitle">Feedback</h3>
       <div className="feedbackForm">
-        <FormItem label='Name' type='input'/>
-        <FormItem label='Email' type='input'/>
-        <FormItem label='Message' type='textarea'/>
+        In Progress 
       </div>
     </div>
   );

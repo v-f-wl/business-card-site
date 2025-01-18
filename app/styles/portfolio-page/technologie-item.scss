@@ -21,3 +21,10 @@
     color: #fdee65;
   }
 }
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .technologie-item {
+    padding: 0.125rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}

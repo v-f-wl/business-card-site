@@ -73,3 +73,10 @@
     }
   }
 }
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .portfolio {
+    margin-top: 20px;
+    max-height: 90%;
+  }
+}

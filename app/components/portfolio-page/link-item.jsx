@@ -1,9 +1,11 @@
-const LinkItem = ({label}) => {
+import ILink from '../icons/ILink';
+
+const LinkItem = ({label, link}) => {
   return (  
-    <div className="">
-      <div className=""></div>
+    <a href={link} className="linkItem">
+      <ILink/>
       <div className="">{label}</div>
-    </div>
+    </a>
   );
 }
  

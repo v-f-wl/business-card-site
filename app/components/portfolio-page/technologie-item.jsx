@@ -3,7 +3,7 @@ const TechnologieItem = ({
   color, label
 }) => {
   return ( 
-    <div className={`technologie-item ${color}`}>#{label}</div>
+    <div className={`technologie-item ${color}`}>{label}</div>
   )
 }
  

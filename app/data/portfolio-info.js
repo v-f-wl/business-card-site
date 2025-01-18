@@ -15,19 +15,32 @@ const portfolioList = [
       ru: 'Приложение для сервиса доставки готовых рационов',
     },
     aboutProject: {
-    "en": "<p>I developed an app for a daily meal delivery service. As part of the project, I completed the following tasks:</p><ul><li><strong>Page layout:</strong> Implemented the design and ensured its responsiveness for various devices.</li><li><strong>Cross-browser testing:</strong> Conducted tests to guarantee compatibility across different browsers.</li><li><strong>Tech stack:</strong> Utilized PHP, the Laravel framework, and Livewire to simplify component-based development.</li><li><strong>Enhanced logic:</strong> Used JavaScript to improve functionality.</li><li><strong>Styling:</strong> Created flexible and modular styles with SCSS.</li></ul><p><u><em>The company’s policy changed, and they redesigned the site, so I provide screenshots of previous versions to showcase my work.</em></u></p>",
-    "ru": "<p>Я разработал приложение для сервиса доставки готовых рационов на день. В рамках проекта я выполнил следующие задачи:</p><ul><li><strong>Верстка страницы:</strong> Реализовал дизайн и обеспечил адаптивность для различных устройств.</li><li><strong>Кроссбраузерное тестирование:</strong> Провел тестирование для обеспечения совместимости в разных браузерах.</li><li><strong>Технологический стек:</strong> Использовал PHP, фреймворк Laravel, а также Livewire для упрощения работы с компонентами.</li><li><strong>Улучшенная логика:</strong> Добавил функциональность с помощью JavaScript.</li><li><strong>Стилизация:</strong> Реализовал гибкие и модульные стили с использованием SCSS.</li></ul><p><u><em>Политика компании изменилась, и они переделали сайт, поэтому предоставляю скриншоты прошлых версий, чтобы продемонстрировать выполненную мной работу.</em></u></p>"
+    "en": "<p>I developed an app for a daily meal delivery service. As part of the project, I completed the following tasks:</p><ul><li><strong>Page layout:</strong> Implemented the design and ensured its responsiveness for various devices.</li><li><strong>Cross-browser testing:</strong> Conducted tests to guarantee compatibility across different browsers.</li><li><strong>Tech stack:</strong> Utilized PHP, the Laravel framework, and Livewire to simplify component-based development.</li><li><strong>Enhanced logic:</strong> Used JavaScript to improve functionality.</li><li><strong>Styling:</strong> Created flexible and modular styles with SCSS.</li></ul><p><em>* The company&apos;s policy changed, and they redesigned the site, so I provide screenshots of previous versions to showcase my work.</em></p>",
+    "ru": "<p>Я разработал приложение для сервиса доставки готовых рационов на день. В рамках проекта я выполнил следующие задачи:</p><ul><li><strong>Верстка страницы:</strong> Реализовал дизайн и обеспечил адаптивность для различных устройств.</li><li><strong>Кроссбраузерное тестирование:</strong> Провел тестирование для обеспечения совместимости в разных браузерах.</li><li><strong>Технологический стек:</strong> Использовал PHP, фреймворк Laravel, а также Livewire для упрощения работы с компонентами.</li><li><strong>Улучшенная логика:</strong> Добавил функциональность с помощью JavaScript.</li><li><strong>Стилизация:</strong> Реализовал гибкие и модульные стили с использованием SCSS.</li></ul><p><em>* Политика компании изменилась, и они переделали сайт, поэтому предоставляю скриншоты прошлых версий, чтобы продемонстрировать выполненную мной работу.</em></p>"
     },
     technologies: ['PHP', 'JavaScript','SQL', 'Laravel', 'Livewire', 'SCSS'],
     links: [
       {
-        title: 'GitHub',
-        url: 'git'
+        title: {
+          en: 'Visit Website',
+          ru: 'Посетить сайт'
+        },
+        url: 'https://chef-kitchen.com/'
       },
       {
-        title: 'Web',
-        url: 'web'
-      }
+        title: {
+          en: 'Google drive with screenshots of first version',
+          ru: 'Google диск со скриншотами первой версии'
+        },
+        url: 'https://drive.google.com/drive/folders/1JLwDJ2zP2g2DaUsW8qJ3cFEg4fxOFNRb?usp=drive_link'
+      },
+      {
+        title: {
+          en: 'Google drive with screenshots of second version',
+          ru: 'Google диск со скриншотами второй версии'
+        },
+        url: 'https://drive.google.com/drive/folders/108pY97lgcoRIOGy_KviEpAgIK_tVHUsa?usp=drive_link'
+      },
     ],
     isPetProject: false,
   },
@@ -39,8 +52,8 @@ const portfolioList = [
     },
     companyName: 'Pet Project',
     interval:{
-      en: 'Aug 2023',
-      ru: 'Авг 2023'
+      en: '2023',
+      ru: '2023'
     },
     shortDescription:{
       en:'The app for creating and taking tests',
@@ -53,12 +66,18 @@ const portfolioList = [
     technologies: ['JavaScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS', 'MondoDB', 'Redux', 'Rest API'],
     links: [
       {
-        title: 'GitHub',
-        url: 'git'
+        title: {
+          en: 'Visit Website',
+          ru: 'Посетить сайт'
+        },
+        url: 'https://glotz.vercel.app/'
       },
       {
-        title: 'Web',
-        url: 'web'
+        title: {
+          en: 'GitHub',
+          ru: 'GitHub'
+        },
+        url: 'https://github.com/v-f-wl/Glotz_Test-App'
       }
     ],
     isPetProject: true,
@@ -85,12 +104,56 @@ const portfolioList = [
     technologies: ['JavaScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS', 'MondoDB', 'Redux', 'Rest API'],
     links: [
       {
-        title: 'GitHub',
-        url: 'git'
+        title: {
+          en: 'Visit Website',
+          ru: 'Посетить сайт'
+        },
+        url: 'https://flumpf.vercel.app/'
       },
       {
-        title: 'Web',
-        url: 'web'
+        title: {
+          en: 'GitHub',
+          ru: 'GitHub'
+        },
+        url: 'https://github.com/v-f-wl/NewsApp-on-Next'
+      }
+    ],
+    isPetProject: false,
+  },
+  {
+    id: '4',
+    title:{
+      en:'React/Next.js(TypeScript) Developer',
+      ru: 'React/Next.js(TypeScripr) Разработчик',
+    },
+    companyName: 'Pet Project',
+    interval:{
+      en: '2023',
+      ru: '2023'
+    },
+    shortDescription: {
+      en: "Interface project for online retail",
+      ru: "Проект интерфейса для онлайн-ретейла"
+    },
+    aboutProject: {
+      en: "This e-commerce application provides users with the following features:</p><ul> <li><strong>Registration and login:</strong> Sign up and log in to access all available functionalities.</li> <li><strong>Product search:</strong> Easily find products using search by name, categories, and filters like color or price.</li> <li><strong>Bookmarks and cart:</strong> Save products to bookmarks or add them to your cart for future purchase.</li> <li><strong>Order processing:</strong> Simulate the checkout process with the ability to view your order history.</li> <li><strong>Profile customization:</strong> Manage your profile, add personal items, or share text posts.</li> </ul>",
+      ru: "Это приложение интернет-магазина предоставляет пользователям следующие возможности:</p><ul> <li><strong>Регистрация и вход:</strong> Зарегистрируйтесь и войдите в приложение, чтобы получить доступ ко всем функциям.</li> <li><strong>Поиск товаров:</strong> Найдите нужные товары с помощью поиска по названию, категориям и фильтрам, таким как цвет или цена.</li> <li><strong>Закладки и корзина:</strong> Добавляйте товары в закладки или корзину для последующей покупки.</li> <li><strong>Оформление заказа:</strong> Имитируйте процесс заказа с возможностью просмотра истории ваших покупок.</li> <li><strong>Персонализация профиля:</strong> Управляйте своим профилем, добавляйте личные товары или делитесь текстовыми постами.</li> </ul"
+    },
+    technologies: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Redux', 'Tailwind CSS', 'MondoDB', 'Redux', 'Rest API'],
+    links: [
+      {
+        title: {
+          en: 'Visit Website',
+          ru: 'Посетить сайт'
+        },
+        url: 'https://grivont.vercel.app'
+      },
+      {
+        title: {
+          en: 'GitHub',
+          ru: 'GitHub'
+        },
+        url: 'https://github.com/v-f-wl/grivont_shop'
       }
     ],
     isPetProject: false,

@@ -17,6 +17,9 @@
     "selectLanguageLabel":"Select Resume Language",
     "downloadLabel":"Open",
     "othersLabel":"Others",
+    "about":"About the project",
+    "technologies":"Technologies",
+    "links":"Links",
     "":""
     
   },
@@ -38,6 +41,9 @@
     "selectLanguageLabel":"Язык Резюме",
     "downloadLabel":"Открыть",
     "othersLabel":"Также",
+    "about":"О проекте",
+    "technologies":"Технологии",
+    "links":"Ссылки",
     "":""
   }
 }

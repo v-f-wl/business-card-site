@@ -12,6 +12,8 @@ const PreviewDetails = () => {
   const [ isActive, setIsActive ] = useState(false)
   
   const dispatch = useDispatch()
+  const locale = useSelector(store => store.language.language)
+  const translations = useSelector(state => state.language.translations)
   const store = useSelector(store => store.portfolioTabs.activeTabs) // id of portfolio
   const activePage = useSelector(store => store.sectionsSwitch.activePage)
 
@@ -43,30 +45,33 @@ const PreviewDetails = () => {
         >
           <IClose/>
         </div>
-        <h2 className="portfolioBadyTitle noto-sans">{currentData.title.en}</h2>
+        <h2 className="portfolioBadyTitle noto-sans">{currentData.title[locale]}</h2>
         <div className="portfolioBadyDetails">
           <div className="portfolioBadyCompanyName">{currentData.companyName}</div>
-          <div className="portfolioBadyDate">{currentData.interval.en}</div>
+          <div className="portfolioBadyDate">{currentData.interval[locale]}</div>
         </div>
 
-        <h3 className="portfolioBadySubtitle">About the project:</h3>
-        <p dangerouslySetInnerHTML={{ __html: currentData.aboutProject.en }} className="portfolioBadyDescriptions"/>
-        {/* <p className="portfolioBadyDescriptions">{currentData.aboutProject.en}</p> */}
-        <h3 className="portfolioBadySubtitle">Technologies:</h3>
+        <h3 className="portfolioBadySubtitle">{translations.about}:</h3>
+        <p dangerouslySetInnerHTML={{ __html: currentData.aboutProject[locale] }} className="portfolioBadyDescriptions"/>
+        <h3 className="portfolioBadySubtitle">{translations.technologies}:</h3>
         <div className="portfolioBadyTechnologies">
           {currentData.technologies.map((item, index) => (
             <TechnologieItem color='item-blue' label={item} key={`item__${index}`}/>
           ))}
         </div>
-        <h3 className="portfolioBadySubtitle">Links:</h3>
-        {/* <div className="portfolioBadyLinks">
+        <h3 className="portfolioBadySubtitle">{translations.links}:</h3>
+        <div className="portfolioBadyLinks">
           {currentData.links.map((item, index) => (
-            <LinkItem label={item.title} key={`links__item__${index}`}/>
+            <LinkItem 
+              label={item.title[locale]} 
+              key={`links__item__${index}`}
+              link={item.url}
+            />
           ))}
-        </div> */}
+        </div>
       </>
     )
-  }, [store])
+  }, [store,locale ])
   return ( 
     <div 
       className={`
