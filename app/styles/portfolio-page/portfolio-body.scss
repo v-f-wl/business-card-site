@@ -9,7 +9,7 @@
   display: flex;
   align-items: start;
   &Hidden {
-    transform: translate(20%, -50%);
+    transform: translate(-35%, -50%);
     opacity: 0;
     visibility: hidden;
     width: 0px;
@@ -18,8 +18,7 @@
   &Active {
     transform: translate(-50%, -50%);
     opacity: 1;
-    transition-property: transform;
-    transition-duration: 0.6s;
+    transition: opacity 0.6s, transform 0.6s;
     visibility: visible;
   }
 }
