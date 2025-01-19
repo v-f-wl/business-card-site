@@ -118,7 +118,7 @@ const portfolioList = [
         url: 'https://github.com/v-f-wl/NewsApp-on-Next'
       }
     ],
-    isPetProject: false,
+    isPetProject: true,
   },
   {
     id: '4',
@@ -156,7 +156,7 @@ const portfolioList = [
         url: 'https://github.com/v-f-wl/grivont_shop'
       }
     ],
-    isPetProject: false,
+    isPetProject: true,
   },
 ]
 

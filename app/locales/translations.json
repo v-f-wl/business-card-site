@@ -20,6 +20,8 @@
     "about":"About the project",
     "technologies":"Technologies",
     "links":"Links",
+    "en":"Eng",
+    "ru":"Rus",
     "":""
     
   },
@@ -44,6 +46,8 @@
     "about":"О проекте",
     "technologies":"Технологии",
     "links":"Ссылки",
+    "en":"Анг",
+    "ru":"Рус",
     "":""
   }
 }

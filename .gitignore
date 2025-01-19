@@ -38,3 +38,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# freelance projects page
+/app/freelance-projects
+/app/styles/freelance-projects
+/app/components/freelance-projects
+/app/components/icons/IHome.jsx

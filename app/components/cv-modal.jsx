@@ -36,10 +36,10 @@ const CvModal = () => {
 
   const handleDownloadCV = () => {
     if (selectedLanguage === 'en') {
-      const filePath = '/cv/cv-2024-en.pdf'
+      const filePath = '/cv/cv-2025-en.pdf'
       window.open(filePath, '_blank')
     } else if (selectedLanguage === 'ru') {
-      const filePath = '/cv/cv-2024-ru.pdf'
+      const filePath = '/cv/cv-2025-ru.pdf'
       window.open(filePath, '_blank')
     } else {
       alert('something went wrong')
@@ -62,14 +62,14 @@ const CvModal = () => {
             </div>
             <div className="cvWrapperLanguage">
               <LanguageItem 
-                label='Eng' 
+                label={translations.en}
                 imageUrl='images/icons/circle-flags_us.svg' 
                 isSelected={selectedLanguage === 'en'}
                 onChangeLanguage={handleChangeSelectedlanguage}
                 id="en"
                 />
               <LanguageItem 
-                label='Rus' 
+                label={translations.ru}
                 imageUrl='images/icons/circle-flags_ru.svg' 
                 isSelected={selectedLanguage === 'ru'}
                 onChangeLanguage={handleChangeSelectedlanguage}

@@ -121,3 +121,33 @@
     }
   }
 }
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .cvModal {
+    &Body {
+      width: 100dvw;
+      height: 100dvh;
+      border-radius: 0px;
+    }
+  }
+  .cvWrapper {
+    &Title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    &Download {
+      margin-top: 1rem;
+      padding: 0.5rem 2rem;
+    }
+  }
+  .languageItem {
+    padding: 1rem;
+    & img {
+      width: 36px;
+      height: 36px;
+    }
+    & span {
+      font-size: 1rem;
+    }
+  }
+}
