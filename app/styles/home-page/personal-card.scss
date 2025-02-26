@@ -46,10 +46,26 @@
     flex-direction: column;
     gap: 0.5rem;
   }
-  &Desc {
-  }
 }
 
+@media (min-width: 2500px) {
+  .personalCard {
+    width: 35rem;
+    &Name {
+      font-size: 5rem;
+    }
+    &Image {
+      margin-top: 2.5rem;
+    }
+    &Attributes {
+      margin: 4rem 0 3rem;
+      gap: 2rem;
+    }
+    &Desc {
+      font-size: 2.5rem;
+    }
+  }
+}
 @media (max-width: 1024px) and (orientation: portrait) {
   .personalCard {
     position: static;

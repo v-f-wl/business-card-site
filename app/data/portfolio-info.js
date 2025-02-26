@@ -7,8 +7,8 @@ const portfolioList = [
     },
     companyName: 'Cheff Kitchen',
     interval:{
-      en: 'Feb 2022- Nov 2024',
-      ru: 'Фев 2022- Ноя 2024'
+      en: 'Feb 2023- Nov 2024',
+      ru: 'Фев 2023- Ноя 2024'
     },
     shortDescription:{
       en:'The app for a meal delivery service',
@@ -18,7 +18,7 @@ const portfolioList = [
     "en": "<p>I developed an app for a daily meal delivery service. As part of the project, I completed the following tasks:</p><ul><li><strong>Page layout:</strong> Implemented the design and ensured its responsiveness for various devices.</li><li><strong>Cross-browser testing:</strong> Conducted tests to guarantee compatibility across different browsers.</li><li><strong>Tech stack:</strong> Utilized PHP, the Laravel framework, and Livewire to simplify component-based development.</li><li><strong>Enhanced logic:</strong> Used JavaScript to improve functionality.</li><li><strong>Styling:</strong> Created flexible and modular styles with SCSS.</li></ul><p><em>* The company&apos;s policy changed, and they redesigned the site, so I provide screenshots of previous versions to showcase my work.</em></p>",
     "ru": "<p>Я разработал приложение для сервиса доставки готовых рационов на день. В рамках проекта я выполнил следующие задачи:</p><ul><li><strong>Верстка страницы:</strong> Реализовал дизайн и обеспечил адаптивность для различных устройств.</li><li><strong>Кроссбраузерное тестирование:</strong> Провел тестирование для обеспечения совместимости в разных браузерах.</li><li><strong>Технологический стек:</strong> Использовал PHP, фреймворк Laravel, а также Livewire для упрощения работы с компонентами.</li><li><strong>Улучшенная логика:</strong> Добавил функциональность с помощью JavaScript.</li><li><strong>Стилизация:</strong> Реализовал гибкие и модульные стили с использованием SCSS.</li></ul><p><em>* Политика компании изменилась, и они переделали сайт, поэтому предоставляю скриншоты прошлых версий, чтобы продемонстрировать выполненную мной работу.</em></p>"
     },
-    technologies: ['PHP', 'JavaScript','SQL', 'Laravel', 'Livewire', 'SCSS'],
+    technologies: ['PHP', 'JavaScript','React' ,'SQL', 'Laravel', 'Livewire', 'SCSS'],
     links: [
       {
         title: {
@@ -41,6 +41,54 @@ const portfolioList = [
         },
         url: 'https://drive.google.com/drive/folders/108pY97lgcoRIOGy_KviEpAgIK_tVHUsa?usp=drive_link'
       },
+    ],
+    isPetProject: false,
+  },
+  {
+    id: '5',
+    title:{
+      en:'Frontend/React Developer',
+      ru: 'Frontend/React Разработчик',
+    },
+    companyName: 'Prosto Coworking',
+    interval:{
+      en: 'Mar 2022- Dec 2023',
+      ru: 'Мар 2022- Дек 2024'
+    },
+    shortDescription: {
+      en: "Personal account dashboard for a coworking space",
+      ru: "Личный кабинет для коворкинга",
+    },
+    aboutProject: {
+      en: `<p>I developed a personal account dashboard for a coworking space. As part of the project, I completed the following tasks:</p>
+      <ul>
+        <li><strong>Dashboard development:</strong> Built an intuitive and user-friendly interface using React.</li>
+        <li><strong>Authentication and profile management:</strong> Implemented user authentication and profile settings with dynamic data updates via API.</li>
+        <li><strong>Performance optimization:</strong> Minimized unnecessary re-renders and implemented caching strategies to improve responsiveness.</li>
+        <li><strong>Adaptive design:</strong> Ensured correct display on various devices and browsers.</li>
+        <li><strong>Styling:</strong> Used SCSS to create a modular and maintainable style structure.</li>
+      </ul>
+      <p><em>* The coworking space later updated its system, but I provide screenshots of the previous version to showcase my work.</em></p>`,
+    
+      ru: `<p>Я разработал личный кабинет для коворкинга. В рамках проекта я выполнил следующие задачи:</p>
+      <ul>
+        <li><strong>Разработка личного кабинета:</strong> Создал удобный и интуитивно понятный интерфейс на React.</li>
+        <li><strong>Аутентификация и управление профилем:</strong> Реализовал авторизацию и настройку профиля пользователей с динамическим обновлением данных через API.</li>
+        <li><strong>Оптимизация производительности:</strong> Минимизировал лишние ререндеры и использовал кеширование для повышения отзывчивости интерфейса.</li>
+        <li><strong>Адаптивная верстка:</strong> Обеспечил корректное отображение на различных устройствах и в разных браузерах.</li>
+        <li><strong>Стилизация:</strong> Использовал SCSS для создания модульной и удобной в поддержке структуры стилей.</li>
+      </ul>
+      <p><em>* Позже система коворкинга была обновлена, но я предоставляю скриншоты предыдущей версии для демонстрации выполненной работы.</em></p>`
+    },
+    technologies: ['PHP', 'JavaScript','React' ,'SQL', 'Laravel', 'Livewire', 'SCSS'],
+    links: [
+      {
+        title: {
+          en: 'Visit Website',
+          ru: 'Посетить сайт'
+        },
+        url: 'https://www.prostospb.team/'
+      }
     ],
     isPetProject: false,
   },

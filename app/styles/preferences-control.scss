@@ -17,7 +17,17 @@
     opacity: 0.6;
   }
 }
-
+@media (min-width: 2500px) {
+  .preferencesItem {
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    & svg {
+      width: 3rem;
+      height: auto;
+    }
+  }
+}
 @media (max-width: 1024px) and (orientation: portrait) {
   .preferencesContainer {
     margin-top: 1.25rem;

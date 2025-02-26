@@ -39,6 +39,11 @@
   }
 }
 
+@media (min-width: 2500px) {
+  .skillsSwitch {
+    bottom: 4rem;
+  }
+}
 @media (max-width: 1024px) and (orientation: portrait) {
   .switchItem {
     padding: 0.25rem 0.5rem;

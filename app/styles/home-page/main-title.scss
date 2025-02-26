@@ -39,7 +39,23 @@
     }
   }
 }
-
+@media (min-width: 2500px) {
+  .mainTitle {
+    margin-top: 20%;
+    margin-left: 40rem;
+    & h1 {
+      font-size: 6rem;
+    }
+    &Git {
+      margin-top: 2rem;
+      font-size: 3rem;
+      & svg {
+        width: 3rem;
+        height: auto;
+      }
+    }
+  }
+}
 @media (max-width: 1024px) and (orientation: portrait) {
   .mainTitle {
     display: none;

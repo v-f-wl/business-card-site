@@ -23,7 +23,7 @@ const PersonalCard = () => {
         <AttributesItems category={translations.basedIn}  label={translations.basedInInfo} />
       </div>
       <MobileNavigation/>
-      <div className="personalCardDesc">I am a Frontend Developer with three years of experience in building websites and applications using React.</div>
+      <div className="personalCardDesc">{translations.description}</div>
     </div>
   );
 }

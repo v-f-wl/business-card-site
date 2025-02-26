@@ -18,3 +18,16 @@
     border: 2px solid #fff;
   }
 }
+
+@media (min-width: 2500px) {
+  .downloadBtn {
+    font-palette: 5rem;
+    & svg {
+      width: 3rem;
+      height: auto;
+    }
+    &Label {
+      font-size: 2.5rem;
+    }
+  }
+}
